@@ -29,6 +29,11 @@
     // pdt('create', 986481, 81640, 'go.example.com');
     pdt('create', 986481, 81640, piDomain);
 
+    pdt('set', 'title', 'こんちくは！');
+    pdt('set', 'piPoints', '30');
+    pdt('set', 'utmSource', 'Shimademy');
+    pdt('set', 'url', 'https://ww4.mogumogushokudo.com');
+
 		pdt(function (tracker) {
       let status = tracker.getConsentStatus();
       let title = tracker.get("title");
@@ -38,11 +43,6 @@
       let utmCampaign = tracker.get("utmCampaign");
       console.log(status, title, url, referrer, piEmail, utmCampaign);
     });
-
-    pdt('set', 'title', 'こんちくは！');
-    pdt('set', 'piPoints', '30');
-    pdt('set', 'utmSource', 'Shimademy');
-    pdt('set', 'url', 'https://ww4.mogumogushokudo.com');
 
 		<button type="button" id="show_banner_button" onClick="pdt('showConsentBanner')">
         Cookie Consent Settings
