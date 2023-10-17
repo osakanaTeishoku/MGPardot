@@ -44,6 +44,15 @@
     pdt('set', 'utmSource', 'Shimademy');
     pdt('set', 'url', 'https://ww4.mogumogushokudo.com');
 
+		<button type="button" id="show_banner_button" onClick="pdt('showConsentBanner')">
+        Cookie Consent Settings
+      </button>
+      <button type="button" id="cookie_clear_button" onClick="pdt('clearTrackingCookies')">
+        Cookie Clear
+      </button>
+      <button type="button" id="revokeConsent_button" onClick="pdt('revokeConsent')">
+        revokeConsent
+      </button>
 　　　　
     pdt('sendPageView');
 </script>
