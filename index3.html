@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="" >
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Pardot Website 検証用"/>
+        <title>Pardot Website 検証 / キャンペーンから発行されたトラッキングコード</title>
+    </head>
+    <body>
+        Hello World
+	    <!-- Pardotで確認したFH連携用のコードをコピペ -->
+<form action="https://go.pardot.com/l/985481/2023-04-12/2mcnyc" method="post">
+<!-- まずは必須項目だけ連携 -->
+<br>
+<label>First Name</label><input type="text" name="First Name"><br><br>
+<label>Last Name</label><input type="text" name="Last Name"><br><br>
+<label>メールアドレス</label><input type="text" name="email"><br><br>
+<label>誕生日を入力してください</label><input type="date" name="Birthday"><br><br>
+<label>中秋テスト</label><input type="text" name="chushutest"><br><br>
+<label>名月テスト</label><br>
+	<input type="checkbox" name="meigetsutest" value="お団子">お団子<br>
+	<input type="checkbox" name="meigetsutest" value="黄色">黄色<br>
+	<input type="checkbox" name="meigetsutest" value="白">白<br>
+	<input type="checkbox" name="meigetsutest" value="うさぎ">うさぎ<br><br>
+<label for="どこの国から受講されますか">どこの国から受講されますか</label><br>
+　　　　　　　　　　　　　　　　<input type="radio" name="どこの国から受講されますか" value="国内"checked />国内<br>
+	　<input type="radio" name="どこの国から受講されますか" value="国外"checked />国外<br><br>
+<label for="アンケート">アンケート</label>
+  <select name="アンケート" id="アンケート">
+  <option value="">--Please choose an option--</option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+</select>
+<!-- submitボタン -->
+<br><br>
+<input type="submit" name="送信">
+</form>
+        <script type="text/javascript">
+piAId = '986481';
+piCId = '112618';
+piHostname = 'pi.pardot.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+    </body>
+</html>
