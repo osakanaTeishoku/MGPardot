@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="" >
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Pardot Website 検証用"/>
+        <title>Pardot Website 検証 / キャンペーンから発行されたトラッキングコード</title>
+    </head>
+    <body>
+        Hello World
+	    <!-- Pardotで確認したFH連携用のコードをコピペ -->
+<form action="https://go.demo.pardot.com/l/733663/2024-11-26/4v3q" method="post">
+<!-- まずは必須項目だけ連携 -->
+<br>
+<label>First Name</label><input type="text" name="First Name"><br><br>
+<label>Last Name</label><input type="text" name="Last Name"><br><br>
+<label>メールアドレス</label><input type="text" name="email"><br><br>
+</select>
+<!-- submitボタン -->
+<br><br>
+<input type="submit" name="送信">
+</form>
+        <script type="text/javascript">
+piAId = '986481';
+piCId = '112618';
+piHostname = 'pi.pardot.com';
 
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+    </body>
+</html>
